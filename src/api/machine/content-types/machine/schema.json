@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "singularName": "machine",
+    "pluralName": "machines",
+    "displayName": "Machine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "form_schemas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::form-schema.form-schema",
+      "mappedBy": "machine"
+    }
+  }
+}

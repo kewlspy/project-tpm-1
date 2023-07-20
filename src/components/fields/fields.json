@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_fields_fields",
+  "info": {
+    "displayName": "Fields",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "details": {
+      "type": "richtext"
+    }
+  }
+}
