@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auto_power_logs",
+  "info": {
+    "singularName": "auto-power-log",
+    "pluralName": "auto-power-logs",
+    "displayName": "AutoPowerLog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "machine": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::machine.machine"
+    },
+    "LogData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "auto.auto-entry",
+      "required": true
+    }
+  }
+}

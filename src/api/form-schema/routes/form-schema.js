@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * form-schema router
+ * form-schema router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;

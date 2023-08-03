@@ -8,30 +8,31 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "machine": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::machine.machine",
-      "inversedBy": "form_schemas"
+      "relation": "oneToOne",
+      "target": "api::machine.machine"
     },
-    "field": {
-      "displayName": "Field",
+    "fields": {
       "type": "component",
       "repeatable": true,
-      "component": "field.field"
+      "component": "dynamic-form.form-field"
     },
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "form_schema"
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Preventive",
+        "Corrective"
+      ],
+      "required": true
     }
   }
 }

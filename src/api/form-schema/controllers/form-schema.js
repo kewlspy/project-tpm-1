@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * form-schema controller
+ *  form-schema controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;

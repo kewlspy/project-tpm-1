@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * form-schema service
+ * form-schema service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
